@@ -25,7 +25,7 @@ instrumentors: List[AbstractInstrumentor] = [
     pymongo_instrumentor,
     pymysql_instrumentor,
     requests_instrumentor,
-    mysql_instrumentor
+    mysql_instrumentor,
 ]
 for instrumentor in instrumentors:
     try:

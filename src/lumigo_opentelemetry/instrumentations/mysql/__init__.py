@@ -5,7 +5,7 @@ class MySqlInstrumentor(AbstractInstrumentor):
         super().__init__("mysql")
     
     def check_if_applicable(self) -> None:
-        import mysql.connector
+        import mysql.connector # noqa
     
     def install_instrumentation(self) -> None:
         from opentelemetry.instrumentation.mysql import MySQLInstrumentor
