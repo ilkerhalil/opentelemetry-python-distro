@@ -25,4 +25,3 @@ types-urllib3<1.27
 typing_extensions==4.0.1
 Werkzeug==2.0.2
 zipp==3.8.0
-opentelemetry-instrumentation-mysql==0.39b0
