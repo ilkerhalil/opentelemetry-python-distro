@@ -1,0 +1,14 @@
+from lumigo_opentelemetry.instrumentations import AbstractInstrumentor
+
+class MySqlInstrumentor(AbstractInstrumentor):
+    def __init__(self) -> None:
+        super().__init__("mysql")
+    
+    def check_if_applicable(self) -> None:
+        import mysql.connector
+    
+    def install_instrumentation(self) -> None:
+        from opentelemetry.instrumentation.mysql import MySQLInstrumentor
+        MySQLInstrumentor().instrument()
+
+instrumentor: AbstractInstrumentor = MySqlInstrumentor()
