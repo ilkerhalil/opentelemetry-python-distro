@@ -13,6 +13,7 @@ from .flask import instrumentor as flask_instrumentor
 from .pymongo import instrumentor as pymongo_instrumentor
 from .pymysql import instrumentor as pymysql_instrumentor
 from .requests import instrumentor as requests_instrumentor
+from .mysql import instrumentor as mysql_instrumentor
 
 
 installed_instrumentations: List[str] = []
